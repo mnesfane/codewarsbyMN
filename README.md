@@ -1,2 +1,2 @@
 # codewarsbyMN
-codewars challenge that i solved
+codewars challenges that i solved
