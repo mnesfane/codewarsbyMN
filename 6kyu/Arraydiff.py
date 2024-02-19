@@ -15,7 +15,7 @@ def array_diff(a, b):
         j += 1
     return a
 
-    # complicated one
+    # not good one
 
     # for x in b:
     #     j = 0
@@ -28,3 +28,15 @@ def array_diff(a, b):
 
 # print(array_diff([1, 2, 3, 7, 7], [7]))
 # print(array_diff([1,2,2], [2]))
+
+# i like
+# def array_diff(a, b):
+#     for i in range(len(b)):
+#         while b[i] in a:
+#             a.remove(b[i])
+#     return a
+# i like too
+
+# like too simple
+# def array_diff(a, b):
+#     return [x for x in a if x not in set(b)] 
