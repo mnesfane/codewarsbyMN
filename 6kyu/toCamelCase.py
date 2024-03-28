@@ -11,6 +11,6 @@ def to_camel_case(text):
         # sum convert a nested list to single list
         textSegments1Darr = sum(textSegments, [])
         camelText = textSegments1Darr[0] + ''.join(word.capitalize() for word in textSegments1Darr[1:])
-        
+    return camelText
 
 to_camel_case("to_g-g9")
