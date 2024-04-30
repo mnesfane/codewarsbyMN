@@ -8,9 +8,9 @@ def to_camel_case(text):
     if is_alphanum(text):
         hyphenSplit = split('-', text)
         textSegments = [split('_', hyph) for hyph in hyphenSplit]
-        # sum convert a nested list to single list
+        # sum convert a nested list to single list 
         textSegments1Darr = sum(textSegments, [])
         camelText = textSegments1Darr[0] + ''.join(word.capitalize() for word in textSegments1Darr[1:])
     return camelText
 
-to_camel_case("to_g-g9")
+to_camel_case("progress-bar-container")
