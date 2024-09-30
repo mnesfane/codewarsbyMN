@@ -21,3 +21,4 @@ const getPrimes = function (start, finish){
 }
 
 console.log(getPrimes(2, 2))
+
