@@ -1,6 +1,5 @@
-const {isPrime} =  require('./isPrime.js')
+const {isPrime} =  require('../6kyu/isPrime.js')
 
-// console.log(isPrime(9))
 
 const getPrimes = function (start, finish){
     let primeArray = []
