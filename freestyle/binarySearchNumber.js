@@ -1,19 +1,22 @@
-function binarySearchNumber(nbr){
-    let min = 0;
-    let max = 100;
-    let guess = 50;
-    let count = 1;
-    while(guess !== nbr){
-        if(guess < nbr){
-        min = guess;
-        guess = Math.floor((max + min) / 2);
-        } else if(guess > nbr){
-        max = guess;
-        guess = Math.floor((max + min) / 2);
-        }
-        count++;
+function binarySearchNumber(startNbr, endNbr, target){
+    if(startNbr > endNbr){
+        return Error('GG')
     }
-    return guess;
+    let guess = Math.floor((endNbr + startNbr) / 2)
+    if(guess === target){
+        return guess
+    }
+    else if(guess > target){
+        return binarySearchNumber(startNbr, guess, target)
+    }
+    else if (guess < target){
+        return binarySearchNumber(guess, endNbr, target)
+    }
 }
 
-console.log(binarySearchNumber(37))
+const min = 20000
+const max = min * 2
+const target = 25662
+
+
+console.log(binarySearchNumber(min, max, target))
